@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-32" y="-263"/>
         </scene>
-        <!--Psychologist View Controller-->
+        <!--Psychologist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PsychologistViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,45 +31,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-kO-HkS">
-                                <rect key="frame" x="20" y="28" width="560" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-kO-HkS">
+                                <rect key="frame" x="20" y="72" width="560" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.56415132307354265" green="0.66085717351051021" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giant frog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9J-la-oor">
-                                <rect key="frame" x="262" y="289" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.37734430260000001" green="0.82420198499999997" blue="0.47121942030000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotten apples" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwF-L8-ala">
-                                <rect key="frame" x="247" y="342" width="106" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.37734430260000001" green="0.82420198499999997" blue="0.47121942030000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dancing trees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xl-f6-PJc">
-                                <rect key="frame" x="247" y="236" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.37734430256711282" green="0.8242019849785408" blue="0.47121942033520919" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9E-Qv-wH1">
+                                <rect key="frame" x="262" y="285" width="76" height="30"/>
+                                <state key="normal" title="Giant frogs">
+                                    <color key="titleColor" red="0.26674846915039818" green="0.81132644849785407" blue="0.36373009410502533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0zJ-U2-hkQ" kind="showDetail" identifier="meh" id="DXo-yC-OPi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kez-UP-Xr5">
+                                <rect key="frame" x="253" y="331" width="95" height="30"/>
+                                <state key="normal" title="Rotten apples">
+                                    <color key="titleColor" red="0.26674846915039818" green="0.81132644849785407" blue="0.36373009410502533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0zJ-U2-hkQ" kind="showDetail" identifier="sad" id="ZvC-JC-KUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V37-yI-bC2">
+                                <rect key="frame" x="253" y="234" width="96" height="30"/>
+                                <state key="normal" title="Dancing trees">
+                                    <color key="titleColor" red="0.26674846915039818" green="0.81132644849785407" blue="0.36373009410502533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0zJ-U2-hkQ" kind="showDetail" identifier="happy" id="n5Q-xc-zoo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kez-UP-Xr5" firstAttribute="centerX" secondItem="U9E-Qv-wH1" secondAttribute="centerX" id="4X3-3F-uk7"/>
+                            <constraint firstItem="kez-UP-Xr5" firstAttribute="top" secondItem="U9E-Qv-wH1" secondAttribute="bottom" constant="16" id="6zc-GQ-1Xx"/>
                             <constraint firstItem="F6X-kO-HkS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7bB-t9-le9"/>
-                            <constraint firstItem="l9J-la-oor" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8gQ-gc-CK1"/>
                             <constraint firstItem="F6X-kO-HkS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ccd-r9-cvk"/>
-                            <constraint firstItem="l9J-la-oor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M50-bJ-D65"/>
-                            <constraint firstItem="VwF-L8-ala" firstAttribute="top" secondItem="l9J-la-oor" secondAttribute="bottom" constant="32" id="R9w-fp-WwK"/>
-                            <constraint firstItem="l9J-la-oor" firstAttribute="top" secondItem="3Xl-f6-PJc" secondAttribute="bottom" constant="32" id="epo-Uk-QUm"/>
-                            <constraint firstItem="VwF-L8-ala" firstAttribute="leading" secondItem="3Xl-f6-PJc" secondAttribute="leading" id="hWv-KV-wJ5"/>
-                            <constraint firstItem="3Xl-f6-PJc" firstAttribute="centerX" secondItem="l9J-la-oor" secondAttribute="centerX" id="hgj-eM-gdu"/>
+                            <constraint firstItem="U9E-Qv-wH1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EV8-Ek-CHS"/>
+                            <constraint firstItem="V37-yI-bC2" firstAttribute="leading" secondItem="kez-UP-Xr5" secondAttribute="leading" id="Vae-aw-YSk"/>
+                            <constraint firstItem="U9E-Qv-wH1" firstAttribute="top" secondItem="V37-yI-bC2" secondAttribute="bottom" constant="21" id="YCE-zC-kiK"/>
+                            <constraint firstItem="U9E-Qv-wH1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gLC-Ck-ULF"/>
                             <constraint firstItem="F6X-kO-HkS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="rXd-UE-b8a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="igI-B8-5wt"/>
+                    <navigationItem key="navigationItem" title="Psychologist" id="igI-B8-5wt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,4 +150,7 @@
             <point key="canvasLocation" x="745" y="-619"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DXo-yC-OPi"/>
+    </inferredMetricsTieBreakers>
 </document>
