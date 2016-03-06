@@ -11,7 +11,7 @@
             <objects>
                 <splitViewController id="GQj-yP-DKv" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="masterViewController" id="80D-h7-0PE"/>
+                        <segue destination="ZHW-1q-QnS" kind="relationship" relationship="masterViewController" id="80D-h7-0PE"/>
                         <segue destination="0zJ-U2-hkQ" kind="relationship" relationship="detailViewController" id="vmb-he-pE8"/>
                     </connections>
                 </splitViewController>
@@ -31,7 +31,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-kO-HkS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-kO-HkS">
                                 <rect key="frame" x="20" y="28" width="560" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.56415132307354265" green="0.66085717351051021" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,10 +69,11 @@
                             <constraint firstItem="F6X-kO-HkS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="rXd-UE-b8a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="igI-B8-5wt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="-619"/>
+            <point key="canvasLocation" x="1557" y="-619"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="nBp-ec-Sjv">
@@ -120,6 +121,24 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="745" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CUT-a4-Df1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZHW-1q-QnS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y1n-E9-VWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l5s-XY-S0l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4R2-5z-ofy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="-619"/>
         </scene>
     </scenes>
 </document>
