@@ -8,7 +8,8 @@
 
 import UIKit
 
-class TextViewController: UIViewController {
+class TextViewController: UIViewController
+{
 
 	@IBOutlet weak var textView: UITextView! {
 		didSet {
@@ -16,8 +17,10 @@ class TextViewController: UIViewController {
 		}
 	}
 
-	var text: String = "" {
-		didSet {
+	var text: String = ""
+	{
+		didSet
+		{
 			textView?.text = text
 		}
 	}
@@ -36,7 +39,8 @@ class TextViewController: UIViewController {
 			}
 		}
 		
-		set {
+		set
+		{
 			super.preferredContentSize = newValue
 		}
 	}
