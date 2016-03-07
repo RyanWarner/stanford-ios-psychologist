@@ -10,6 +10,10 @@ import UIKit
 
 class PsychologistViewController: UIViewController {
 
+	@IBAction func noDreams( sender: UIButton ) {
+		performSegueWithIdentifier( "noDreams", sender: self )
+	}
+
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
 	{
 		var destination = segue.destinationViewController as? UIViewController

@@ -64,14 +64,23 @@
                                     <segue destination="xNF-O1-aID" kind="showDetail" identifier="happy" id="n5Q-xc-zoo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knx-dk-vet">
+                                <rect key="frame" x="263" y="405" width="75" height="30"/>
+                                <state key="normal" title="No dreams"/>
+                                <connections>
+                                    <action selector="noDreams:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFg-lb-E4N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kez-UP-Xr5" firstAttribute="centerX" secondItem="U9E-Qv-wH1" secondAttribute="centerX" id="4X3-3F-uk7"/>
                             <constraint firstItem="kez-UP-Xr5" firstAttribute="top" secondItem="U9E-Qv-wH1" secondAttribute="bottom" constant="16" id="6zc-GQ-1Xx"/>
                             <constraint firstItem="F6X-kO-HkS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7bB-t9-le9"/>
+                            <constraint firstItem="knx-dk-vet" firstAttribute="centerX" secondItem="kez-UP-Xr5" secondAttribute="centerX" id="7iM-ik-kPK"/>
                             <constraint firstItem="F6X-kO-HkS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ccd-r9-cvk"/>
                             <constraint firstItem="U9E-Qv-wH1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EV8-Ek-CHS"/>
+                            <constraint firstItem="knx-dk-vet" firstAttribute="top" secondItem="kez-UP-Xr5" secondAttribute="bottom" constant="44" id="FmT-zO-PVH"/>
                             <constraint firstItem="V37-yI-bC2" firstAttribute="leading" secondItem="kez-UP-Xr5" secondAttribute="leading" id="Vae-aw-YSk"/>
                             <constraint firstItem="U9E-Qv-wH1" firstAttribute="top" secondItem="V37-yI-bC2" secondAttribute="bottom" constant="21" id="YCE-zC-kiK"/>
                             <constraint firstItem="U9E-Qv-wH1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gLC-Ck-ULF"/>
@@ -79,6 +88,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Psychologist" id="igI-B8-5wt"/>
+                    <connections>
+                        <segue destination="xNF-O1-aID" kind="showDetail" identifier="noDreams" id="Gl8-Wo-vkq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,6 +182,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vmb-he-pE8"/>
+        <segue reference="Gl8-Wo-vkq"/>
     </inferredMetricsTieBreakers>
 </document>
