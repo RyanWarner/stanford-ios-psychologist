@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557" y="-619"/>
+            <point key="canvasLocation" x="1552" y="-701"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="nBp-ec-Sjv">
@@ -130,7 +130,15 @@
                             <constraint firstAttribute="trailing" secondItem="uA8-dp-Eu0" secondAttribute="trailing" id="wNq-PR-AD2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9zi-Wd-CcN"/>
+                    <navigationItem key="navigationItem" id="9zi-Wd-CcN">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="7lb-kQ-pY4">
+                            <connections>
+                                <segue destination="uxv-jK-65S" kind="popoverPresentation" identifier="Show History" popoverAnchorBarButtonItem="7lb-kQ-pY4" id="nem-82-Hvv">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="faceView" destination="uA8-dp-Eu0" id="Ih3-4m-DXh"/>
                     </connections>
@@ -142,7 +150,25 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1557" y="133"/>
+            <point key="canvasLocation" x="1552" y="212"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fcu-ce-JWm">
+            <objects>
+                <viewController id="uxv-jK-65S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dEU-LD-0Ye"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Ym-ZN-r6z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iPP-M9-WxN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KrD-pX-DLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318" y="212"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CUT-a4-Df1">
@@ -160,7 +186,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R2-5z-ofy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="-619"/>
+            <point key="canvasLocation" x="745" y="-701"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iqo-Eg-cuS">
@@ -178,7 +204,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koU-pX-Mia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="133"/>
+            <point key="canvasLocation" x="745" y="212"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
