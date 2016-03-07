@@ -12,7 +12,7 @@
                 <splitViewController id="GQj-yP-DKv" sceneMemberID="viewController">
                     <connections>
                         <segue destination="ZHW-1q-QnS" kind="relationship" relationship="masterViewController" id="80D-h7-0PE"/>
-                        <segue destination="0zJ-U2-hkQ" kind="relationship" relationship="detailViewController" id="vmb-he-pE8"/>
+                        <segue destination="xNF-O1-aID" kind="relationship" relationship="detailViewController" id="vmb-he-pE8"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5W-9h-9JO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,7 +43,7 @@
                                     <color key="titleColor" red="0.26674846915039818" green="0.81132644849785407" blue="0.36373009410502533" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0zJ-U2-hkQ" kind="showDetail" identifier="meh" id="DXo-yC-OPi"/>
+                                    <segue destination="xNF-O1-aID" kind="showDetail" identifier="meh" id="DXo-yC-OPi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kez-UP-Xr5">
@@ -52,7 +52,7 @@
                                     <color key="titleColor" red="0.26674846915039818" green="0.81132644849785407" blue="0.36373009410502533" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0zJ-U2-hkQ" kind="showDetail" identifier="sad" id="ZvC-JC-KUY"/>
+                                    <segue destination="xNF-O1-aID" kind="showDetail" identifier="sad" id="ZvC-JC-KUY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V37-yI-bC2">
@@ -61,7 +61,7 @@
                                     <color key="titleColor" red="0.26674846915039818" green="0.81132644849785407" blue="0.36373009410502533" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0zJ-U2-hkQ" kind="showDetail" identifier="happy" id="n5Q-xc-zoo"/>
+                                    <segue destination="xNF-O1-aID" kind="showDetail" identifier="happy" id="n5Q-xc-zoo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,6 +118,7 @@
                             <constraint firstAttribute="trailing" secondItem="uA8-dp-Eu0" secondAttribute="trailing" id="wNq-PR-AD2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9zi-Wd-CcN"/>
                     <connections>
                         <outlet property="faceView" destination="uA8-dp-Eu0" id="Ih3-4m-DXh"/>
                     </connections>
@@ -129,7 +130,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="745" y="133"/>
+            <point key="canvasLocation" x="1557" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CUT-a4-Df1">
@@ -149,8 +150,26 @@
             </objects>
             <point key="canvasLocation" x="745" y="-619"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iqo-Eg-cuS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xNF-O1-aID" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iQh-DE-41i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0zJ-U2-hkQ" kind="relationship" relationship="rootViewController" id="ZkU-8e-Lfg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koU-pX-Mia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="133"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DXo-yC-OPi"/>
+        <segue reference="vmb-he-pE8"/>
     </inferredMetricsTieBreakers>
 </document>
