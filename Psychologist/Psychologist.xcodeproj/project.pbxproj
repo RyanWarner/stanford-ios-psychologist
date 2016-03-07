@@ -16,6 +16,8 @@
 		FF7E23E31C8CE96400A93105 /* PsychologistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E23E21C8CE96400A93105 /* PsychologistUITests.swift */; };
 		FF7E23F31C8CEDF100A93105 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E23F11C8CEDF100A93105 /* HappinessViewController.swift */; };
 		FF7E23F41C8CEDF100A93105 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E23F21C8CEDF100A93105 /* FaceView.swift */; };
+		FF7E23F61C8DD55D00A93105 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E23F51C8DD55D00A93105 /* TextViewController.swift */; };
+		FF7E23F81C8DD6F700A93105 /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E23F71C8DD6F700A93105 /* DiagnosedHappinessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FF7E23E41C8CE96400A93105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF7E23F11C8CEDF100A93105 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		FF7E23F21C8CEDF100A93105 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		FF7E23F51C8DD55D00A93105 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		FF7E23F71C8DD6F700A93105 /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		FF7E23C11C8CE96400A93105 /* Psychologist */ = {
 			isa = PBXGroup;
 			children = (
+				FF7E23F51C8DD55D00A93105 /* TextViewController.swift */,
 				FF7E23C41C8CE96400A93105 /* PsychologistViewController.swift */,
 				FF7E23F11C8CEDF100A93105 /* HappinessViewController.swift */,
 				FF7E23F21C8CEDF100A93105 /* FaceView.swift */,
 				FF7E23C61C8CE96400A93105 /* Main.storyboard */,
+				FF7E23F71C8DD6F700A93105 /* DiagnosedHappinessViewController.swift */,
 				FF7E23F01C8CEB0E00A93105 /* Supporting Files */,
 			);
 			path = Psychologist;
@@ -270,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7E23F61C8DD55D00A93105 /* TextViewController.swift in Sources */,
 				FF7E23C51C8CE96400A93105 /* PsychologistViewController.swift in Sources */,
 				FF7E23F31C8CEDF100A93105 /* HappinessViewController.swift in Sources */,
+				FF7E23F81C8DD6F700A93105 /* DiagnosedHappinessViewController.swift in Sources */,
 				FF7E23C31C8CE96400A93105 /* AppDelegate.swift in Sources */,
 				FF7E23F41C8CEDF100A93105 /* FaceView.swift in Sources */,
 			);
